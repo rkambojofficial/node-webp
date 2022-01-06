@@ -1,10 +1,12 @@
 {
     "name": "node-webp",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "WebP support for Node.js",
     "main": "dist/index.js",
+    "types": "dist/types/index.d.ts",
     "files": [
-        "dist"
+        "dist",
+        "webp"
     ],
     "scripts": {
         "build": "tsc",
@@ -19,6 +21,13 @@
     "repository": {
         "url": "https://github.com/rkambojofficial/node-webp"
     },
+    "keywords": [
+        "node-webp",
+        "WebP",
+        "Web Picture",
+        "WebP Converter",
+        "Converter"
+    ],
     "homepage": "https://github.com/rkambojofficial/node-webp",
     "devDependencies": {
         "@types/node": "^17.0.5",

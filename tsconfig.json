@@ -1,14 +1,20 @@
 {
     "compilerOptions": {
-        "target": "ES2016",
+        "lib": [
+            "ES2021"
+        ],
         "module": "CommonJS",
+        "target": "ES2021",
+        "noImplicitAny": true,
+        "sourceMap": true,
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
         "declaration": true,
         "declarationDir": "dist/types",
-        "outDir": "dist"
+        "outDir": "dist",
+        "moduleResolution": "Node"
     },
     "include": [
         "lib"

@@ -2,9 +2,9 @@ import { execFile } from "child_process";
 import { promisify } from "util";
 import { join, extname } from "path";
 
-const execute = promisify(execFile);
+export const execute = promisify(execFile);
 
-function getCommand(command: "cwebp" | "dwebp") {
+export function getCommand(command: "cwebp" | "dwebp") {
     let platform: string;
     switch (process.platform) {
         case "win32":
@@ -22,13 +22,7 @@ function getCommand(command: "cwebp" | "dwebp") {
     return join(__dirname, "../", "webp", platform, command);
 }
 
-function getOutputFilepath(imageFilepath: string) {
+export function getOutputFilepath(imageFilepath: string) {
     const imageExtension = extname(imageFilepath);
     return imageFilepath.replace(imageExtension, ".webp");
 }
-
-export {
-    execute,
-    getCommand,
-    getOutputFilepath
-};

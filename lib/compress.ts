@@ -31,23 +31,23 @@ interface CompressOptions {
      */
     quality?: number;
     /**
-     * Resize the source to a rectangle with size width x height. If either (but not both) of the width or height is 0, the value will be calculated preserving the aspect-ratio.
-     * @field width
-     * @field height
+     * Resize the source to a rectangle with size `width` x `height`. If either (but not both) of the width or height is 0, the value will be calculated preserving the aspect-ratio.
+     * @property width {number}
+     * @property `height`
      */
     resize?: ResizeOptions;
     /**
-     * Crop the source to a rectangle with top-left corner at coordinates (xPosition, yPosition) and size width x height. This cropping area must be fully contained within the source rectangle.
-     * @field xPosition
-     * @field yPosition
-     * @field width
-     * @field height
+     * Crop the source to a rectangle with top-left corner at coordinates (`xPosition`, `yPosition`) and size `width` x `height`. This cropping area must be fully contained within the source rectangle.
+     * @field `xPosition`
+     * @field `yPosition`
+     * @field `width`
+     * @field `height`
      */
     crop?: CropOptions;
     /**
      * Encode the image without any loss.
-     * @field level
-     * @field preserveTransparency
+     * @field `level`
+     * @field `preserveTransparency`
      */
     lossless?: LosslessOptions;
     /**
