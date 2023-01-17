@@ -9,6 +9,7 @@ export function getCommand(command: "cwebp" | "dwebp") {
     switch (process.platform) {
         case "win32":
             platform = "windows-x64";
+            command = command + '.exe'
             break;
         case "linux":
             platform = "linux-x86-64";
